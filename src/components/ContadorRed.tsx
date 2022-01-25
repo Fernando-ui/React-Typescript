@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useReducer } from "react";
 
 const initialState = {
   contador: 0,
@@ -9,7 +9,7 @@ type ActionType = {
 };
 
 
-const contadorReducer = (state: typeof initialState, action: ActionType) => {
+const contadorReducer = (state: typeof initialState, action:ActionType) => {
   switch (action.type) {
     case 'incrementar':
         return{
@@ -22,10 +22,18 @@ const contadorReducer = (state: typeof initialState, action: ActionType) => {
 };
 
 export const ContadorRed = () => {
+
+    const [contadorState, dispatch] = useReducer(contadorReducer, initialState );
+
   return (                              
     <>
       <h1>useReff</h1>
-      <h2> Contador: 10</h2>
+      <h2> Contador: {contadorState.contador }</h2>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 };
