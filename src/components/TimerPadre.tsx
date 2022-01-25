@@ -3,6 +3,7 @@ import { Timer } from "./Timer";
 
 export const TimerPadre = () => {
   const [milisegundo, setMilisegundo] = useState(1000);
+  const [second, setSecond] = useState(1000);
   return (
     <>
       <span> Milisegundos {milisegundo}</span>
@@ -18,7 +19,7 @@ export const TimerPadre = () => {
       >
         2000
       </button>
-      <Timer milisecond={milisegundo}/>
+      <Timer milisecond={ milisegundo } second= { second }  />
     </>
   );
 };

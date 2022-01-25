@@ -1,21 +1,26 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from "react";
 
 type TimerArgs = {
-    milisecond:number
-}
+  milisecond: number;
+  second: number;
+};
 
-export const Timer = ( {milisecond}:TimerArgs ) => {
-    const [segundos, setSegundos] = useState(0);
-    const ref = useRef<NodeJS.Timeout>();
-    console.log( milisecond );
+export const Timer = ({ milisecond, second }: TimerArgs) => {
+  const [segundos, setSegundos] = useState(0);
+  const ref = useRef<NodeJS.Timeout>();
 
-    useEffect(() => {
-        ref.current && clearInterval(ref.current);
-        ref.current = setInterval(()=> setSegundos( s => s + 1), milisecond);
-    }, [ milisecond]);
-    
-  return <div>
-      <h4>Timer:<small>{segundos}</small></h4>
-  </div>;
+  useEffect(() => {
+    ref.current && clearInterval(ref.current);
+    ref.current = setInterval(() => setSegundos((s) => s + 1), milisecond);
+  }, [milisecond]);
+
+  return (
+    <div>
+      <h4>
+        Timer:<small>Tenemos el segundo:{second}</small>
+      </h4>
+      {/* <h4>Timer:<small>{ JSON.stringify( milisecond ) }</small></h4> */}
+    </div>
+  );
 };
 
