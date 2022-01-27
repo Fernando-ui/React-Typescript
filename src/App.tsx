@@ -1,6 +1,7 @@
 import React from 'react';
 import { ContadorRed } from './components/ContadorRed';
 import { Counter } from './components/Counter';
+import { Operaciones } from './components/Operaciones';
 import { SumaNumero } from './components/SumaNumero';
 import { TimerPadre } from './components/TimerPadre';
 import { Effecto } from './components/useEffect';
@@ -24,6 +25,8 @@ function App() {
       < Effecto />
       <hr />
       < ContadorRed />
+      <hr />
+      <Operaciones />
     </>
   );
 }
