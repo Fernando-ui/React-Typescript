@@ -12,13 +12,12 @@ type ActionType =
       type: "decrementar";
     }
   | {
-      type: "establecer", payload:number;
+      type: "establecer";
+      payload: number;
     }
-  |
-    {
-      type:'resetear'
-    }
-  ;
+  | {
+      type: "resetear";
+    };
 
 const contadorReducer = (state: typeof initialState, action: ActionType) => {
   switch (action.type) {
@@ -67,7 +66,7 @@ export const ContadorRed = () => {
         -1
       </button>
       <button
-        onClick={() => dispatch({ type: "establecer",payload:300 })}
+        onClick={() => dispatch({ type: "establecer", payload: 300 })}
         className="btn btn-outline-primary"
       >
         100
@@ -80,7 +79,6 @@ export const ContadorRed = () => {
       </button>
       <br />
       <br />
-
     </>
   );
 };

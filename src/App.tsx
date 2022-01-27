@@ -2,6 +2,7 @@ import React from 'react';
 import { ContadorRed } from './components/ContadorRed';
 import { Counter } from './components/Counter';
 import { Operaciones } from './components/Operaciones';
+import { Saludos } from './components/Saludos';
 import { SumaNumero } from './components/SumaNumero';
 import { TimerPadre } from './components/TimerPadre';
 import { Effecto } from './components/useEffect';
@@ -27,8 +28,13 @@ function App() {
       < ContadorRed />
       <hr />
       <Operaciones />
-    </>
-  );
+      <hr />
+      <Saludos/>
+      <br />
+      <br />
+    </> 
+  ); 
 }
 
 export default App;
+ 
