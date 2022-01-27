@@ -36,7 +36,6 @@ const operacionesReducer = (state: typeof initialState, action:ActionsType) => {
       return state;
   }
 };
-
 export const Operaciones = () => {
   const [state, dispatch] = useReducer(operacionesReducer, initialState);
   const texto = useRef<string>(state.palabra);

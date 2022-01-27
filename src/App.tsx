@@ -1,6 +1,7 @@
 import React from 'react';
 import { ContadorRed } from './components/ContadorRed';
 import { Counter } from './components/Counter';
+import { Formulario } from './components/Formulario';
 import { Operaciones } from './components/Operaciones';
 import { Saludos } from './components/Saludos';
 import { SumaNumero } from './components/SumaNumero';
@@ -27,12 +28,22 @@ function App() {
       <hr />
       < ContadorRed />
       <hr />
-      <Operaciones />
+      <h2> useReducer </h2>
       <hr />
+      <Operaciones />
       <Saludos/>
+      <br />
+      <h2> customHooks </h2>
+      <hr />
+      <Formulario/>
+
+      <br />
+      <br />
+      <br />
       <br />
       <br />
     </> 
+
   ); 
 }
 
