@@ -9,6 +9,7 @@ import { SumaNumero } from "./components/SumaNumero";
 import { TimerPadre } from "./components/TimerPadre";
 import { Effecto } from "./components/useEffect";
 import { Usuario } from "./components/Usuario";
+import { Todo } from "./todo/Todo";
 
 function App() {
   return (
@@ -43,6 +44,10 @@ function App() {
       <Formulario3 />
       <br />
       <hr />
+      <br />
+      <hr />
+      <Todo />
+
     </>
   );
 }
