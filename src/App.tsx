@@ -9,6 +9,7 @@ import { SumaNumero } from "./components/SumaNumero";
 import { TimerPadre } from "./components/TimerPadre";
 import { Effecto } from "./components/useEffect";
 import { Usuario } from "./components/Usuario";
+import { Appcontexto } from "./contexto/Appcontexto";
 import { Todo } from "./todo/Todo";
 
 function App() {
@@ -47,7 +48,7 @@ function App() {
       <br />
       <hr />
       <Todo />
-
+      <Appcontexto />
     </>
   );
 }
