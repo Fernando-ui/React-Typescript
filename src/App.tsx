@@ -10,6 +10,7 @@ import { TimerPadre } from "./components/TimerPadre";
 import { Effecto } from "./components/useEffect";
 import { Usuario } from "./components/Usuario";
 import { Appcontexto } from "./contexto/Appcontexto";
+import { Appcontexto2 } from "./contexto2/Appcontexto2";
 import { Todo } from "./todo/Todo";
 
 function App() {
@@ -48,7 +49,8 @@ function App() {
       <br />
       <hr />
       <Todo />
-      <Appcontexto />
+      {/* <Appcontexto /> */}
+      <Appcontexto2/>
     </>
   );
 }
