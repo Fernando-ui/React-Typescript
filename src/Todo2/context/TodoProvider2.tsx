@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useReducer } from "react";
 import { TodoState } from "../interfaces/interfaces2";
 import { todoContext } from "./TodoContex2";
+import { todoReducer } from "./todoReducer2";
 
 const initialState:TodoState = {
     todoCount: 0,
@@ -11,13 +12,14 @@ const initialState:TodoState = {
             completed:false,
         },
         {
-            id:'1',
+            id:'2',
             desc:'Conseguir mas cosas',
             completed:false,
         }
     ],
-    completed: 0,
-    pending: 0
+   
+    pending: 0,
+    completed:0
 };
 
 interface props {
@@ -25,9 +27,10 @@ interface props {
 }
 
 export const TodoProvider2 = ({ children }: props) => {
+  const [todoState, dispatch] = useReducer( todoReducer, initialState);
   return (
     <>
-      <todoContext.Provider value={{ nombre: "algo mas" }}>
+      <todoContext.Provider value={{ todoState }}>
         {children}
       </todoContext.Provider>
     </>

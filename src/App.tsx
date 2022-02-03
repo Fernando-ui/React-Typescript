@@ -11,7 +11,6 @@ import { Effecto } from "./components/useEffect";
 import { Usuario } from "./components/Usuario";
 import { Appcontexto } from "./contexto/Appcontexto";
 import { Appcontexto2 } from "./contexto2/Appcontexto2";
-import { Todo } from "./todo/Todo";
 import { Todo2 } from "./Todo2/Todo2";
 
 function App() {
