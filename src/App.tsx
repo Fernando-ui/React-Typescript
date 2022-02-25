@@ -4,6 +4,7 @@ import { Counter } from "./components/Counter";
 import { Formulario2 } from "./components/Formulario2";
 import { Formulario3 } from "./components/Formulario3";
 import { Operaciones } from "./components/Operaciones";
+import { ReactMemo } from "./components/ReactMemo";
 import { Saludos } from "./components/Saludos";
 import { SumaNumero } from "./components/SumaNumero";
 import { TimerPadre } from "./components/TimerPadre";
@@ -50,8 +51,15 @@ function App() {
       <br />
       {/* <Todo /> */}
       {/* <Appcontexto /> */}
-      {/* <Appcontexto2/> */}
+      <Appcontexto2/>
       <Todo2/>
+      <br />
+      <br />
+      <br />
+      <ReactMemo/>
+      <br />
+      <br />
+      <br />
       <br />
       <br />
       <br />
