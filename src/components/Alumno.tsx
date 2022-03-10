@@ -1,7 +1,9 @@
 import React from "react";
-import useUser from "./memo/hooks/useUser";
+import useUser from "../contexto3/hook/useUser";
+
 export const Alumno = () => {
   const respuesta = useUser();
+  
   return (
     <>
       <div>Alumno</div>

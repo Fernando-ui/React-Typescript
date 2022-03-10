@@ -14,21 +14,18 @@ import { Alumno } from "./components/Alumno";
 // import { Appcontexto } from "./contexto/Appcontexto";
 // import { Appcontexto2 } from "./contexto2/Appcontexto2";
 // import { Todo2 } from "./Todo2/Todo2";
-import UserContext from './components/memo/UserContext/UserContext';
-
+// import UserContext from './components/memo/UserContext/UserContext';
+import UserContext from "./contexto3/UserContext";
 function App() {
   const data = {
-
-    name:'Fernando',
-    last_name:'Sosa',
-    age:26,
+    nombre:'Fernando',
+    apellido:'Sosa'
   };
   return (
     <>
-      <UserContext.Provider value = {data}>
-
-      <h1>Hello</h1>
-      <Alumno/>
+      <UserContext.Provider value={data}>
+        <h1>Hello</h1>
+        <Alumno />
       </UserContext.Provider>
     </>
   );
